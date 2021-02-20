@@ -12,3 +12,6 @@ There is a lot for Jeremy and the Data Analytics team to do. First, here are som
 For each statistical analysis, there will be a summary interpretation of the findings.
 
 ## Linear Regression to Predict MPG
+
+
+![](Linear_Regression_to_Predict_MPG.png)
