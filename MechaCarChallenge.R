@@ -21,3 +21,24 @@ lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AW
 summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data=MechaCar_mpg))
 
 # Determine p-value and r-squared value for the linear regression model
+# P-value 
+# vehicle_length and ground_clearance had statistically significant impact on mpg. 
+# However, the intercept also was statistically significant leading me to believe 
+# that there are material variables not included in this regression.
+
+# R-squared
+# The r-squared value denotes that the model is a strong predictor of mpg.
+
+
+
+
+
+
+
+# ----------------------------------------------------- Additional Notes
+# INTERPRETING "R" RESULTS
+# Absolute Value of r	 ------- + Strength of Correlation
+#                   r < 0.3	   | None or very weak
+#               0.3 ≤ r < 0.5  | Weak
+#               0.5 ≤ r < 0.7	 | Moderate
+#                     r ≥ 0.7	 | Strong
