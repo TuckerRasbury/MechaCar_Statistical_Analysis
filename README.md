@@ -22,7 +22,7 @@ To conduct this analysis, I used the miles per gallon dataset provided by 'manag
 
 
 ## Summary Statistics on Suspension Coils
-The manufacturing team has a design specification requiring that the suspension coils maintain a varaiance that does not exceed 100 lbs per square inch; we reviewed a dataset provided on the suspension coils and using summary() and group_by() functions in R, we sought to investigate if the design specification requirement was being followed.
+The manufacturing team has a design specification requiring that the suspension coils maintain a varaiance that does not exceed 100 lbs per square inch (PSI); we reviewed a dataset provided on the suspension coils and using summary() and group_by() functions in R, we sought to investigate if the design specification requirement was being followed.
 
 At a high level, we found that the variance followed the design specification. Below are the summary statistics for the all of the lot producing the MechaCar prototype.
 
@@ -37,7 +37,7 @@ However, upon furhter investigation into each individual lot, we also found that
 ![](lot_summary.png)
 
 ## T-Tests on Suspension Coils
-
+We performed four sepearate t-tests to determine if the manufacturing lots were statistically different from the mean population concerning PSI. When analyzed at a high level, or rather all of the lots in the same t-test, and analyzed at the per lot level, the t-tests revealed that the the alternative hypothesis (that all or an individual lot did not have a mean PSI of 1500) could be rejected. The results of the four t-tests are below. 
 
 
 ###### T Test on All Lots
