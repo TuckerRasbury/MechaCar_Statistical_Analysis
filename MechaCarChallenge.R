@@ -47,9 +47,24 @@ head(total_summary)
 lot_summary <- Suspension_Coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI))
 head(lot_summary)
 
+# ------------------ Deliverable 3
+?t.test()
+
+# All Lots
+# Use the t.test() function to determine if the PSI **across all manufacturing lots**
+# is statistically different from the population mean of 1,500 pounds per square inch
+
+# Visualize Distribution
+all_lots_table <- Suspension_Coil %>% sample_n(50) #randomly sample 50 data points
+plt <- ggplot(all_lots_table,aes(x=PSI)) #import dataset into ggplot2
+plt + geom_density() #visualize distribution using density plot
+
+# t.test() on all lots
+t.test(x=Suspension_Coil$PSI, mu=1500)
 
 
-
+# MODEL -
+# t.test(log10(sample_table$Miles_Driven),mu=mean(log10(population_table$Miles_Driven))) #compare sample versus population means
 
 # ----------------------------------------------------- Additional Notes
 # INTERPRETING "R" RESULTS
