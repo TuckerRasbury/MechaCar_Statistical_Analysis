@@ -49,3 +49,18 @@ We performed four sepearate t-tests to determine if the manufacturing lots were 
 ![](t.test(per_lot).png)
 
 ## Study Design: MechaCar vs Competition
+Post launch of the MechaCar, we will want to analyze the car's performance in the market against its competition. In order to do that, we will want to conduct further analysis. Some of the questions we will want to answer in that follow up analysis are as follows:
+- What metric or metrics are you going to test?
+- What is the null hypothesis or alternative hypothesis?
+- What statistical test would you use to test the hypothesis? And why?
+- What data is needed to run the statistical test?
+
+Here are some of the thoughts I have on those questions for the follow up study to come post MechaCar launch:
+- What metric or metrics are you going to test?
+   -  Number of Cars sold vs our other models vs other brands, mpg compared to competition, cost versus competition, where are most MechaCars being sold versus competition, features in the vehicle versus peers
+- What is the null hypothesis or alternative hypothesis?
+   - The null hypothesis is that a successful launch of the car would equate to x number of sales in y time period across z-list of regions. The alternative would be that not meeting any or some of the criteria previously mentioned would mean that we could not reject the idea that we failed in some way we anticipated succeeding. 
+- What statistical test would you use to test the hypothesis? And why?
+   - Comparing the MechaCar to its competition requires a different analysis for each category I described. However, on the regional front and price front, I could use a bar chart comparing our sales and sale price with the sales of our competition. Another example would be mpg compared across models sold in a given period of time. 
+- What data is needed to run the statistical test?
+   - We need sales data for our competitiors complete with models, price, sales dates, launch dates, region vehicle was sold in, and the same for our MechaCar.
