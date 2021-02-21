@@ -14,7 +14,7 @@ For each statistical analysis, there will be a summary interpretation of the fin
 ## Linear Regression to Predict MPG
 The multi-variable linear regression to predict mpg was successful at identifying statistially significant variables that contributed to miles per gallon (mpg). With that said, however, our analysis also had room for improvement. Please see the below for our exact findings; below that you will find my methodology and interpretation.
 
-##### Regression Output Predicting MPG
+###### Regression Output Predicting MPG
 
 ![](Linear_Regression_to_Predict_MPG.png)
 
@@ -26,13 +26,13 @@ The manufacturing team has a design specification requiring that the suspension 
 
 At a high level, we found that the variance followed the design specification. Below are the summary statistics for the all of the lot producing the MechaCar prototype.
 
-##### Statistics for All Lots
+###### Statistics for All Lots
 
 ![](total_summary.png)
 
 However, upon furhter investigation into each individual lot, we also found that one of the three lots, Lot3 had a variance of 170 which did not meet the specification. Lot3's failure needs to be raised to management. The details for each lot are below.
 
-##### Statistics with Breakdown by Lot
+###### Statistics with Breakdown by Lot
 
 ![](lot_summary.png)
 
