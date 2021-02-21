@@ -37,3 +37,14 @@ However, upon furhter investigation into each individual lot, we also found that
 ![](lot_summary.png)
 
 ## T-Tests on Suspension Coils
+
+
+
+###### T Test on All Lots
+
+![](t.test(all_lots).png)
+
+###### T Test on Each Individual Lot
+
+![](t.test(per_lot).png)
+
