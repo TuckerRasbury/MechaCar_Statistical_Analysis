@@ -48,3 +48,4 @@ We performed four sepearate t-tests to determine if the manufacturing lots were 
 
 ![](t.test(per_lot).png)
 
+## Study Design: MechaCar vs Competition
