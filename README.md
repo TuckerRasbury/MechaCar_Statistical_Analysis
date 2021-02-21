@@ -36,3 +36,4 @@ However, upon furhter investigation into each individual lot, we also found that
 
 ![](lot_summary.png)
 
+## T-Tests on Suspension Coils
