@@ -14,8 +14,25 @@ For each statistical analysis, there will be a summary interpretation of the fin
 ## Linear Regression to Predict MPG
 The multi-variable linear regression to predict mpg was successful at identifying statistially significant variables that contributed to miles per gallon (mpg). With that said, however, our analysis also had room for improvement. Please see the below for our exact findings; below that you will find my methodology and interpretation.
 
-**_Regression Output Predicting MPG_**
+**Regression Output Predicting MPG**
 
 ![](Linear_Regression_to_Predict_MPG.png)
 
 To conduct this analysis, I used the miles per gallon dataset provided by 'management' and loaded it into a dataset. I used mpg as my dependent variable, and vehicle length, vehicle weight, spoiler angle, ground clearance, and all wheel drive (AWD) as independent variables. After executing the regression, I found that two variables had a non-random amount of variance / a correlation with mpg, and with a high level of confidence as that (denoted by the three asteriks). The significant variables were vehicle length and ground clearance. Taking these two statisitcally significant variables into account, I can confirm that the slope of the linear model is not/should not be considered zero. At a high level, the model predicts the mpg of the MechaCars with an accuracy rate of roughly 71%, denoted by our r-squared.
+
+
+## Summary Statistics on Suspension Coils
+The manufacturing team has a design specification requiring that the suspension coils maintain a varaiance that does not exceed 100 lbs per square inch; we reviewed a dataset provided on the suspension coils and using summary() and group_by() functions in R, we sought to investigate if the design specification requirement was being followed.
+
+At a high level, we found that the variance followed the design specification. Below are the summary statistics for the all of the lot producing the MechaCar prototype.
+
+**Statistics for All Lots**
+
+![](total_summary.png)
+
+However, upon furhter investigation into each individual lot, we also found that one of the three lots, Lot3 had a variance of 170 which did not meet the specification. Lot3's failure needs to be raised to management. The details for each lot are below.
+
+**Statistics with Breakdown by Lot**
+
+![](lot_summary.png)
+
