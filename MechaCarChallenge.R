@@ -50,21 +50,38 @@ head(lot_summary)
 # ------------------ Deliverable 3
 ?t.test()
 
-# All Lots
+# T.Test(All Lots)
 # Use the t.test() function to determine if the PSI **across all manufacturing lots**
 # is statistically different from the population mean of 1,500 pounds per square inch
 
 # Visualize Distribution
-all_lots_table <- Suspension_Coil %>% sample_n(50) #randomly sample 50 data points
-plt <- ggplot(all_lots_table,aes(x=PSI)) #import dataset into ggplot2
-plt + geom_density() #visualize distribution using density plot
+all_lots_table <- Suspension_Coil %>% sample_n(50) 
+plt <- ggplot(all_lots_table,aes(x=PSI)) 
+plt + geom_density() 
 
 # t.test() on all lots
 t.test(x=Suspension_Coil$PSI, mu=1500)
 
+# Results, interpreting t.tests(All Lots)
+# Failed to reject that there is a statistical difference from the sample mean and population mean.
 
-# MODEL -
-# t.test(log10(sample_table$Miles_Driven),mu=mean(log10(population_table$Miles_Driven))) #compare sample versus population means
+# T.Test(Grouped by Lot)
+
+## Lot 1
+Lot1 <- subset(Suspension_Coil, Manufacturing_Lot=='Lot1') 
+t.test(x=Lot1$PSI, mu=1500) 
+
+## Lot 2
+Lot2 <- subset(Suspension_Coil, Manufacturing_Lot=='Lot2')
+t.test(x=Lot2$PSI, mu=1500) 
+
+# Lot 3
+Lot3 <- subset(Suspension_Coil, Manufacturing_Lot=='Lot3')
+t.test(x=Lot3$PSI, mu=1500) 
+
+# Results, interpreting t.tests(sampled by lot#)
+# Failed to reject that there is a statistical difference from the sample mean and population mean 
+# for all three lots.
 
 # ----------------------------------------------------- Additional Notes
 # INTERPRETING "R" RESULTS
@@ -73,3 +90,8 @@ t.test(x=Suspension_Coil$PSI, mu=1500)
 #               0.3 ≤ r < 0.5  | Weak
 #               0.5 ≤ r < 0.7	 | Moderate
 #                     r ≥ 0.7	 | Strong
+#
+# MODEL T.TEST()
+# may or may not need log10
+# t.test(log10(sample_table$Miles_Driven),mu=mean(log10(population_table$Miles_Driven))) #compare sample versus population means
+# mu = a number indicating the true value of the mean (or difference in means if you are performing a two sample test).
